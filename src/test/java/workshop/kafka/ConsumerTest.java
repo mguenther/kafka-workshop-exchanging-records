@@ -18,7 +18,7 @@ import static net.mguenther.kafka.junit.SendValues.to;
 import static net.mguenther.kafka.junit.TopicConfig.withName;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ConsumerTest {
+class ConsumerTest {
 
     private EmbeddedKafkaCluster kafka;
 
