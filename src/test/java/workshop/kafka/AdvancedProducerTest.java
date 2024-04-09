@@ -21,7 +21,7 @@ import static net.mguenther.kafka.junit.EmbeddedKafkaClusterConfig.defaultCluste
 import static net.mguenther.kafka.junit.TopicConfig.withName;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AdvancedProducerTest {
+class AdvancedProducerTest {
 
     private EmbeddedKafkaCluster kafka;
     private AdvancedProducer sut;
@@ -125,7 +125,7 @@ public class AdvancedProducerTest {
         var caughtExceptions = new ArrayList<Exception>(1);
         var latch = new CountDownLatch(1);
 
-        sut.publish("supposed-to-be-invalid", "my-key", "my-payload", (metadata, exception) -> {
+        sut.publish("supposed-to-be-invalid:", "my-key", "my-payload", (metadata, exception) -> {
 
             if (exception != null) {
                 caughtExceptions.add(exception);

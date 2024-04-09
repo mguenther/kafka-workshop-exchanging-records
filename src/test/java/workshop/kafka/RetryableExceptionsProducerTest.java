@@ -39,8 +39,8 @@ class RetryableExceptionsProducerTest {
     }
 
     @Test
-    @DisplayName("Task 6.4: At which point does the producer see the 'NotEnoughReplicasException'?")
-    void task6_4() throws Exception {
+    @DisplayName("Task 9.4: At which point does the producer see the 'NotEnoughReplicasException'?")
+    void task_9_4() throws Exception {
 
         var caughtExceptions = new ArrayList<Exception>(1);
         var latch = new CountDownLatch(1);
