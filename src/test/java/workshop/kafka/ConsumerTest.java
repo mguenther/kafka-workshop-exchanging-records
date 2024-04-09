@@ -36,7 +36,7 @@ public class ConsumerTest {
 
     @Test
     @DisplayName("Task 5: Consuming messages")
-    void task_2() throws Exception {
+    void task_5() throws Exception {
 
         var values = List.of("1", "2", "3", "4", "5");
 
