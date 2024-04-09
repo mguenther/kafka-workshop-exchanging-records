@@ -22,7 +22,7 @@ import static net.mguenther.kafka.junit.EmbeddedKafkaClusterConfig.defaultCluste
 import static net.mguenther.kafka.junit.TopicConfig.withName;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ProducerTest {
+class ProducerTest {
 
     private EmbeddedKafkaCluster kafka;
     private Producer sut;
